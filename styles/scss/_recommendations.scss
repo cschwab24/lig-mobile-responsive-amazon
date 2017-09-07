@@ -1,4 +1,28 @@
 #recommendations {
-	height: 300px;
-	background: blue;
+	margin: 0 60px 20px;
+	@media screen and (max-width: $break-lg) {
+		margin: 0 20px 20px;
+	}
+	h2 {
+		margin-bottom: 30px;
+	}
+	img {
+		height: 200px;
+		width: auto;
+		margin: auto;
+	}
+	.quick-look {
+		display: none;
+	}
+	.slick-next, .slick-prev {
+		&:before {
+			color: $default_text;
+		}
+	}
+	.slick-prev {
+		left: -10px;
+	}
+	.slick-next {
+		right: -10px;
+	}
 }

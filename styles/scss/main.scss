@@ -60,8 +60,9 @@ $break-xs: 480px;
 // imports
 @import "_global.scss";		
 @import "_header.scss";
-@import "_hero.scss";
 @import "_nav.scss";
-@import "_recommendations.scss";
 @import "_search.scss";
+@import "_hero.scss";
+@import "_recommendations.scss";
 @import "_suggestion-categories-top.scss";
+@import "_footer.scss";

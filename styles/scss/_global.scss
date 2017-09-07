@@ -33,3 +33,16 @@ img {
   vertical-align: top;
   display: table-cell;
 }
+
+.slick-next {
+	right: 25px;
+}
+.slick-prev {
+	left: 25px;
+}
+.slick-arrow {
+	z-index: 100;
+}
+.slick-disabled {
+	cursor: default;
+}
