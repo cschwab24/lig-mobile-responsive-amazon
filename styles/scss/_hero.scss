@@ -1,0 +1,15 @@
+#hero {
+	.slider {
+		&.desktop {
+			@media screen and (max-width: $break-md) {
+				display: none;
+			}
+		}
+		&.mobile {
+			display: none;
+			@media screen and (max-width: $break-md) {
+				display: block;
+			}
+		}
+	}
+}

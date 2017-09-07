@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-	// hero slider
-	$("#hero .slider").slick({
+	// hero slider desktop
+	$("#hero .slider.desktop").slick({
 		dots: false,
 		infinite: true,
 		speed: 500,
@@ -10,6 +10,18 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 3000
 	});
+
+	// hero mobile
+	$("#hero .slider.mobile").slick({
+		dots: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000
+	});
+
 
 	// recommendations carousel
 	$('#recommendations .carousel').slick({
