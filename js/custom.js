@@ -62,6 +62,17 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 
+	// department nav
+	$('#departments-toggle').click(function(){
+		$(this).toggleClass('active');
+		if ($(this).hasClass('active')){
+			$(this).children('.fa-plus').removeClass('fa-plus').addClass('fa-times');
+		} else {
+			$(this).children('.fa-times').addClass('fa-plus').removeClass('fa-times');
+		}
+		$('#departments-dropdown').toggleClass('active');
+	});
+
 	// search category selection
 	$('#header-search select').on('change', function() {
 	  var val = this.value;
