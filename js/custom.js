@@ -50,9 +50,22 @@ $(document).ready(function(){
 	  ]
 	});
 
+	// show "quick look" button for recommendation item
+	// $('.slick-current').hover(function(){
+	// 	$(this).find('.quick-look').slideDown(300)();
+	// }, function(){
+	// 	$(this).find('.quick-look').slideUp(300)();
+	// });
+
 	// hamburger nav
 	$('#menuToggle').click(function(){
 		$(this).toggleClass('active');
 	});
+
+	// search category selection
+	$('#header-search select').on('change', function() {
+	  var val = this.value;
+	  $('.search-label').text(val);
+	})
 	
 }); // end doc ready

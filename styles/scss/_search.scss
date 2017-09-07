@@ -1,7 +1,7 @@
 #header-search {
 	background-color: #CCC;
 	form {
-		grid-template-columns: 40px 1fr 40px;
+		grid-template-columns: auto 1fr 40px;
 		grid-gap: 0;
 		height: calc(100% - 15px);
 		width: calc(100% - 32px);
@@ -42,12 +42,14 @@
 		height: 30px;
 	}
 	.left {
-		width: 40px;
 		padding: 0 5px;
 		font-size: 0.8125em;
 		position: relative;
 		background-color: $grey;
 		color: $md_grey_text;
+		.search-label {
+			text-transform: capitalize;
+		}
 		.search-facade {
 			vertical-align: middle;
 			display: table-cell;
