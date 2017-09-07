@@ -1,4 +1,6 @@
 #suggestions {
+	background-color: $grey;
+	padding: 10px;
 	&.grid-container {
 		grid-template-columns: repeat(5, 1fr);
 		grid-gap: 10px;
@@ -13,42 +15,103 @@
 		}
 	}
 	.hud {
+		background-color: $white;
 		.container {
+			height: calc(100% - 40px);
 			padding: 20px;
+			position: relative;
 		}
-		.card-title {
+		a.card-title {
 			display: block;
 			text-decoration: none;
+			text-transform: uppercase;
 			color: $dk_text;
 			font-size: 24px;
-			border-bottom: 5px solid $white;
+			margin-bottom: 15px;
+			padding-bottom: 5px;
+			border-bottom: 5px solid;
+			&:hover {
+				border-bottom: 7px solid;
+				padding-bottom: 3px;
+			}
+		}
+		p{
+			margin: 0;
+			font-size: 0.9375em
+		}
+		img {
+			margin-top: 20px;
+			&:hover {
+				@include Transform(scale(1.025));
+				@include Transition(transform 0.5s ease-in-out);
+			}
 		}
 		&#customer {
 			@media screen and (max-width: $break-lg) {
 				grid-row: 1 / span 2;
 			}
 			@media screen and (max-width: $break-sm) {
-				grid-row: 1 / span 4;
+				grid-row: 1 / span 1;
+			}
+			p {
+				color: $disabled_text;
+				font-size: 0.8125em;
+				margin: 20px 0 5px;
+			}
+			a {
+				text-decoration: none;
+				color: $default_text;
+				font-size: 0.8125em;
+				line-height: 1.7em;
+				display: inline-block;
+				&:hover {
+					color: darken($action, 7%);
+				}
+			}
+			.picture {
+				img {
+					margin-top: 0;
+				}
+			}
+			.profile {
+				margin-top: 5px;
+				p {
+					margin: 0 auto 5px;
+				}
+				.name {
+					font-size: 1.125em;
+					color: $default_text;
+				}
+			}
+			.grid-container {
+				grid-template-columns: 25% 1fr;
+				grid-gap: 10px;
 			}
 		}
 		&#prime {
-			.card-title {
+			a.card-title {
 				border-color: $teal;
 			}
 		}
 		&#video {
-			.card-title {
+			a.card-title {
 				border-color: $lime;
 			}
 		}
 		&#music {
-			.card-title {
+			a.card-title {
 				border-color: $tangerine;
+			}
+			img {
+				margin-top: 28px;
 			}
 		}
 		&#alexa {
-			.card-title {
+			a.card-title {
 				border-color: $watermellon;
+			}
+			p {
+				font-style: italic;
 			}
 		}
 	}

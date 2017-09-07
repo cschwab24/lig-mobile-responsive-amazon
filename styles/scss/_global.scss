@@ -1,6 +1,7 @@
 body {
 	font-family: Arial,sans-serif;
 	font-size: 16px;
+	color: $default_text;
 }
 
 .grid-container {
@@ -22,6 +23,10 @@ input {
 
 a {
 	@include Transition(all 0.3s ease-in-out);
+}
+
+img {
+	max-width: 100%;
 }
 
 .fa-sort-down:before, .fa-sort-desc:before {
