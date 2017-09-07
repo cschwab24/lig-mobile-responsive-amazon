@@ -6,6 +6,12 @@ header {
 		z-index: 10000;
 		width: 100%;
 	}
+	&.active {
+		@media screen and (max-width: $break-sm) {
+			height: 100%;
+			overflow-y: scroll;
+		}
+	}
 	.grid-container {
 		grid-template-columns: 150px 1fr;
 		grid-template-rows: 60px;

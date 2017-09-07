@@ -72,6 +72,7 @@ $(document).ready(function(){
 	// department nav
 	$('#departments-toggle').click(function(){
 		$(this).toggleClass('active');
+		$('header').toggleClass('active');
 		if ($('#menuToggle').hasClass('active')) {
 			$('#menuToggle').click();
 		}
