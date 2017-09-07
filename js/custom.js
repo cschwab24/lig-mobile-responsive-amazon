@@ -62,21 +62,19 @@ $(document).ready(function(){
 	  ]
 	});
 
-	// show "quick look" button for recommendation item
-	// $('.slick-current').hover(function(){
-	// 	$(this).find('.quick-look').slideDown(300)();
-	// }, function(){
-	// 	$(this).find('.quick-look').slideUp(300)();
-	// });
-
 	// hamburger nav
 	$('#menuToggle').click(function(){
 		$(this).toggleClass('active');
+		$('#departments-dropdown, #departments-toggle').removeClass('active');
+		$('#departments-toggle').children('.fa-times').addClass('fa-plus').removeClass('fa-times');
 	});
 
 	// department nav
 	$('#departments-toggle').click(function(){
 		$(this).toggleClass('active');
+		if ($('#menuToggle').hasClass('active')) {
+			$('#menuToggle').click();
+		}
 		if ($(this).hasClass('active')){
 			$(this).children('.fa-plus').removeClass('fa-plus').addClass('fa-times');
 		} else {
@@ -87,8 +85,8 @@ $(document).ready(function(){
 
 	// search category selection
 	$('#header-search select').on('change', function() {
-	  var val = this.value;
-	  $('.search-label').text(val);
-	})
+		var val = this.value;
+		$('.search-label').text(val);
+	});
 	
 }); // end doc ready

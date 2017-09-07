@@ -1,5 +1,11 @@
 header {
 	background-color: $bluebeacon;
+	@media screen and (max-width: $break-md) {
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+		width: 100%;
+	}
 	.grid-container {
 		grid-template-columns: 150px 1fr;
 		grid-template-rows: 60px;
@@ -8,9 +14,17 @@ header {
 			grid-template-columns: 100%;
 			grid-gap: 10px;
 		}
+		&.top {
+			@media screen and (max-width: $break-sm) {
+				grid-template-rows: 40px 60px;
+			}
+		}
 		&.bottom {
 			grid-template-columns: 150px 1fr;
 			grid-template-rows: 40px;
+			@media screen and (max-width: $break-sm) {
+				grid-template-columns: 1fr 1fr;
+			}
 		}
 	}
 	#logo {
