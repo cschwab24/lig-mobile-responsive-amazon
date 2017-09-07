@@ -49,5 +49,10 @@ $(document).ready(function(){
 	    }
 	  ]
 	});
+
+	// hamburger nav
+	$('#menuToggle').click(function(){
+		$(this).toggleClass('active');
+	});
 	
 }); // end doc ready

@@ -9,8 +9,8 @@ header {
 			grid-gap: 10px;
 		}
 		&.bottom {
+			grid-template-columns: 150px 1fr;
 			grid-template-rows: 40px;
-			margin-top: 20px;
 		}
 	}
 	#logo {
