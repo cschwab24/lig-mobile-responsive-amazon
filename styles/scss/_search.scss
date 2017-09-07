@@ -1,11 +1,13 @@
-#search {
+#header-search {
 	background-color: #CCC;
 	form {
 		grid-template-columns: 40px 1fr 40px;
-		height: auto;
+		grid-gap: 0;
+		height: calc(100% - 15px);
 		width: 90%;
 		margin: 15px auto 0;
 		@media screen and (max-width: $break-small) {
+			height: 30px;
 			padding: 10px 0;
 			margin: auto;
 		}
@@ -43,15 +45,11 @@
 		padding: 0 5px;
 		position: relative;
 		background-color: $grey;
-		color: $grey_text;
+		color: $md_grey_text;
 		.search-facade {
 			vertical-align: middle;
 			display: table-cell;
 			height: 30px;
-			.fa-sort-down:before, .fa-sort-desc:before {
-			    vertical-align: top;
-			    display: table-cell;
-			}
 		}
 		@media screen and (max-width: $break-small) {
 			margin-left: 0;

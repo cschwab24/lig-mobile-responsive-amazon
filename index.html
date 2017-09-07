@@ -8,6 +8,8 @@
 		<meta name="keywords" content="Amazon, Amazon.com, Books, Online Shopping, Book Store, Magazine, Subscription, Music, CDs, DVDs, Videos, Electronics, Video Games, Computers, Cell Phones, Toys, Games, Apparel, Accessories, Shoes, Jewelry, Watches, Office Products, Sports & Outdoors, Sporting Goods, Baby Products, Health, Personal Care, Beauty, Home, Garden, Bed & Bath, Furniture, Tools, Hardware, Vacuums, Outdoor Living, Automotive Parts, Pet Supplies, Broadband, DSL">
 		<link rel="stylesheet" href="./styles/css/normalize.css">
 		<link rel="stylesheet" href="./styles/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
 		<link rel="stylesheet" href="./styles/css/main.css">
 		<!--[if lt IE 9]>
 		<script src="./js/html5shiv.js"></script>
@@ -18,9 +20,8 @@
 		<header>
 			<div class="top grid-container">
 				<div id="logo"><a href="./index.html"></a></div>
-				<div id="search">
+				<div id="header-search">
 					<form accept-charset="utf-8" action="" method="GET" name="site-search" role="search" class="grid-container">
-
 						<div class="left">
 							<div class="search-facade">
 								<span class="search-label">All</span>
@@ -80,25 +81,55 @@
 							<option value="search-alias=wine">Wine</option>
 							</select>
 						</div>
-						
 						<div class="center">
 							<input type="text" id="twotabsearchtextbox" value="" name="field-keywords" autocomplete="off" placeholder="" class="nav-input" tabindex="">
 						</div>
-
 						<div class="right">
 							<input type="submit" class="nav-input" value="Go" tabindex="">
 						</div>
-
 						<div class="clear"></div>
-
 					</form>
 				</div>
 			</div>
+			<div class="bottom grid-container">
+				<nav id="shop">
+					<ul>	
+						<li><a href="#">Departments&nbsp;&nbsp;<i class="fa fa-sort-desc"></i></a></li>
+					</ul>
+				</nav>
+				<nav id="main">
+					<ul>	
+						<li><a href="#">Browsing History&nbsp;&nbsp;<i class="fa fa-sort-desc"></i></a></li>
+						<li><a href="#">Chris's Amazon.com</a></li>
+						<li><a href="#">Today's Deals</a></li>
+						<li><a href="#">Gift Cards &amp; Registry</a></li>
+						<li><a href="#">Sell</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
+
+		<main>
+			<section id="hero">
+				<div class="slider">
+				  <div><img src="./images/hero_slider/boston.jpg" /></div>
+				  <div><img src="./images/hero_slider/echo.jpg" /></div>
+				  <div><img src="./images/hero_slider/kindle.jpg" /></div>
+				  <div><img src="./images/hero_slider/music.jpg" /></div>
+				  <div><img src="./images/hero_slider/tick.jpg" /></div>
+				  <div><img src="./images/hero_slider/tide.jpg" /></div>
+				  <div><img src="./images/hero_slider/watches.jpg" /></div>
+				</div>
+			</section>
+			<section id="suggestions"></section>
+			<section id="recommendations"></section>
+		</main>
 
 		<footer></footer>
 
 		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./slick/slick.min.js"></script>
 		<script src="./js/custom.js"></script>
 	</body>
 </html>
