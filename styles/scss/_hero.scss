@@ -2,4 +2,13 @@
 	img {
 		max-width: 100%;
 	}
+	.slick-next {
+		right: 25px;
+	}
+	.slick-prev {
+		left: 25px;
+	}
+	.slick-arrow {
+		z-index: 100;
+	}
 }

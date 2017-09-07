@@ -6,7 +6,7 @@
 		height: calc(100% - 15px);
 		width: 90%;
 		margin: 15px auto 0;
-		@media screen and (max-width: $break-small) {
+		@media screen and (max-width: $break-sm) {
 			height: 30px;
 			padding: 10px 0;
 			margin: auto;
@@ -51,7 +51,7 @@
 			display: table-cell;
 			height: 30px;
 		}
-		@media screen and (max-width: $break-small) {
+		@media screen and (max-width: $break-sm) {
 			margin-left: 0;
 		}
 	}

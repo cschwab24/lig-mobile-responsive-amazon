@@ -4,10 +4,19 @@ $action: #febd69;
 $grey: #f3f3f3;
 $md_grey_text: #666;
 $lt_grey_text: #ccc;
+$dk_text: #002E36;
 $white: #fff;
+$teal: #82D8E3;
+$lime: #ADE422;
+$tangerine: #FFA724;
+$watermellon: #FF5252;
 
 // break points
-$break-small: 600px;
+$break-xl: 1200px;
+$break-lg: 1024px;
+$break-md: 768px;
+$break-sm: 640px;
+$break-xs: 480px;
 
 // mixins
 @mixin BorderRadius($param){
