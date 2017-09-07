@@ -87,6 +87,15 @@
 				grid-template-columns: 25% 1fr;
 				grid-gap: 10px;
 			}
+			.tablet-cta {
+				display: none;
+				@media screen and (max-width: $break-lg) {
+					display: block;
+				}
+				@media screen and (max-width: $break-sm) {
+					display: none;
+				}
+			}
 		}
 		&#prime {
 			a.card-title {
