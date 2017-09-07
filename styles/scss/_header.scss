@@ -7,7 +7,7 @@ header {
 		width: 100%;
 	}
 	&.active {
-		@media screen and (max-width: $break-sm) {
+		@media screen and (max-width: $break-md) {
 			height: 100%;
 			overflow-y: scroll;
 		}
