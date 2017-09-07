@@ -1,0 +1,29 @@
+header {
+	background-color: $bluebeacon;
+	.grid-container {
+		&.top {
+			grid-template-columns: 150px 1fr;
+			grid-template-rows: 60px;
+			grid-gap: 40px;
+			@media screen and (max-width: $break-small) {
+				grid-template-columns: 100%;
+				grid-gap: 10px;
+			}
+		}
+	}
+	#logo {
+		background: url('../../images/amazon-logo.png') no-repeat center center;
+		background-size: contain;
+		margin-left: 20px;
+		position: relative;
+		@media screen and (max-width: $break-small) {
+			margin-top: 10px;
+			margin-left: 0px;
+		}
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
