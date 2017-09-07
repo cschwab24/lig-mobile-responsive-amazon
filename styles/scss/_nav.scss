@@ -121,6 +121,7 @@ header {
   transform: rotate(-45deg) translate(0, -1px);
 }
 #menu{
+	pointer-events: none;
   position: absolute;
   width: 300px;
   margin: -37px 0 0 -325px;

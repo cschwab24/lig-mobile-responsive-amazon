@@ -26,6 +26,10 @@ header {
 			display: block;
 			height: 100%;
 			width: 100%;
+			@media screen and (max-width: $break-sm){
+				width: 200px;
+				margin: auto;
+			}
 		}
 	}
 }
